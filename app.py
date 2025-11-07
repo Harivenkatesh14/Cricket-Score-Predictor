@@ -3,7 +3,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from keras.models import load_model
+from tensorflow.keras.models import load_model
+
 
 # Load model and preprocessors
 model = load_model("ipl_score_model.h5")
