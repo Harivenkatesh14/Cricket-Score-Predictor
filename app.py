@@ -15,10 +15,11 @@ with open("scaler.pkl", "rb") as f:
 with open("label_encoders.pkl", "rb") as f:
     label_encoders = pickle.load(f)
 
-st.set_page_config(page_title="🏏 IPL Score Predictor", layout="centered")
+st.set_page_config(page_title="🏏 Cricket Score Predictor", layout="centered")
 
-st.title("🏏 IPL Score Prediction App")
+st.title("🏏 Cricket Score Predictor")
 st.markdown("### Predict the total score based on the current match situation")
+
 
 # Dropdowns
 venue = st.selectbox("Venue", label_encoders['venue'].classes_)
